@@ -9,76 +9,136 @@
     --fonte-secundaria: 'Montserrat', sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    height: 100vh;
+body {
+    box-sizing: border-box;
     background-color: var(--cor-terciaria);
 }
-#main_decodificador{
+
+#main_decodificador {
     display: flex;
-    
+    flex-wrap: wrap; /* Permitir que os itens sejam quebrados em múltiplas linhas se necessário */
+    justify-content: space-between;
 }
 
-.digite_texto{
-   align-items: left;
-   justify-content: space-between;
-   margin: 7vh 7vh 0vh 7vh;
+.digite_texto {
+    flex: 1 1 45%; /* Permitir que o item cresça e diminua */
+    margin: 7vh 2vh 0vh 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-textarea{
+
+textarea {
     outline: 0;
     padding: 1vh;
     resize: none;
     border: none;
     border-radius: 1%;
-    width: 100vh;
+    width: 100%;
     height: 80vh;
     background-color: var(--cor-principal);
     font-size: 7vh;
     font-family: var(--fonte-secundaria);
     color: var(--cor-quarta);
-
 }
+
 ::placeholder {
     font-family: var(--fonte-secundaria);
     color: #e9f0c9;
 }
-
-
-.botao button{
-    margin:2vh ;
+.botao {
+    display: flex;
+    justify-content: center;
+}
+.botao button {
+    margin: 2vh;
     border: none;
     border-radius: 5%;
     padding: 2vh;
-    align-self: center;
     font-family: var(--fonte-principal);
     color: var(--cor-quarta);
     background-color: var(--cor-principal);
-    
 
 }
-button:hover{
+
+button:hover {
     color: var(--cor-quarta);
     background-color: var(--cor-secundaria);
     transform: scale(1.1);
 }
 
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizar itens horizontalmente */
+}
+
 .resultado img {
+    margin: 0; /* Remover margens extras */
     width: 60vh;
-    align-self: center;
+    display: block;
 }
-.resposta_texto{
-    margin: 7vh 7vh 0vh 0vh;
-    align-self: center;
+
+.resposta_texto {
+    flex: 1 1 45%; /* Permitir que o item cresça e diminua */
+    margin: 7vh 7vh 0vh 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
 }
+
 h2 {
     font-family: var(--fonte-principal);
     color: var(--cor-quarta);
 }
-.sem_texto{
+
+.sem_texto {
     font-family: var(--fonte-secundaria);
     color: var(--cor-quarta);
+}
+
+footer{
+    font-size: 10px;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-secundaria);
+    height: 7vh;
+    color: var(--cor-quarta);
+}
+footer a {
+    text-decoration: none;
+    color: var(--cor-quarta);
+}
+.direitos p {
+    padding-top: 2vh;
+    text-align: center;
+    
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    #main_decodificador {
+        flex-direction: column; /* Alterar a direção para coluna */
+        align-items: center; /* Centralizar os itens */
+    }
+
+    .digite_texto, .resposta_texto {
+        margin: 3vh 7vh; /* Ajustar margens para visualização em tela menor */
+        width: 80%; /* Ajustar largura para visualização em tela menor */
+    }
+
+    textarea {
+        height: 40vh; /* Ajustar altura do textarea para tela menor */
+    }
+
+    .resultado img {
+        width: 80%; /* Ajustar largura da imagem para tela menor */
+        margin-left: 0; /* Centralizar a imagem */
+    }
 }
