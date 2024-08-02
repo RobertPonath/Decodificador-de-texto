@@ -21,12 +21,12 @@ body {
 
 #main_decodificador {
     display: flex;
-    flex-wrap: wrap; /* Permitir que os itens sejam quebrados em múltiplas linhas se necessário */
+    flex-wrap: wrap; 
     justify-content: space-between;
 }
 
 .digite_texto {
-    flex: 1 1 45%; /* Permitir que o item cresça e diminua */
+    flex: 1 1 45%; 
     margin: 7vh 2vh 0vh 7vh;
     display: flex;
     flex-direction: column;
@@ -75,17 +75,17 @@ button:hover {
 .resultado {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centralizar itens horizontalmente */
+    align-items: center; 
 }
 
 .resultado img {
-    margin: 0; /* Remover margens extras */
+    margin: 0; 
     width: 60vh;
     display: block;
 }
 
 .resposta_texto {
-    flex: 1 1 45%; /* Permitir que o item cresça e diminua */
+    flex: 1 1 45%; 
     margin: 7vh 7vh 0vh 2vh;
     display: flex;
     flex-direction: column;
@@ -121,24 +121,23 @@ footer a {
     
 }
 
-/* Media query para telas menores */
 @media (max-width: 768px) {
     #main_decodificador {
-        flex-direction: column; /* Alterar a direção para coluna */
-        align-items: center; /* Centralizar os itens */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .digite_texto, .resposta_texto {
-        margin: 3vh 7vh; /* Ajustar margens para visualização em tela menor */
-        width: 80%; /* Ajustar largura para visualização em tela menor */
+        margin: 3vh 7vh; 
+        width: 80%; 
     }
 
     textarea {
-        height: 40vh; /* Ajustar altura do textarea para tela menor */
+        height: 40vh; 
     }
 
     .resultado img {
-        width: 80%; /* Ajustar largura da imagem para tela menor */
-        margin-left: 0; /* Centralizar a imagem */
+        width: 80%; 
+        margin-left: 0; 
     }
 }
