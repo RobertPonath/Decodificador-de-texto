@@ -4,6 +4,7 @@
 <head>
 
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer ></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../pagina_incial_challenge/img/favicon.png">
@@ -15,8 +16,8 @@
             <textarea placeholder="Digite seu texto" name="codificar_decodificar" id="texto_inserido">
             </textarea>
             <div class="botao">            
-                <button name="criptografar"> Criptografar</button>
-                <button name="Descriptografar">Descriptografar</button>
+                <button name="criptografar" id="criptografar"> Criptografar</button>
+                <button name="Descriptografar" id="descriptografar">Descriptografar</button>
             </div>
         </section>
 
@@ -26,6 +27,8 @@
                 <h2 class="sem_texto">Nenhuma mensagem encontrada</h2>
                 <p class="sem_texto">Digite um texto que você deseja criptografar ou descriptografar</p>
             </div>
+            <div id="resultado_texto"></div>
+            <button id="copiar_texto" style="display: none;"> Copiar</button>
         </section>
     </main>
 
