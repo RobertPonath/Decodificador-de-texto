@@ -40,3 +40,6 @@ document.getElementById('copiar_texto').addEventListener('click', function() {
         alert('Texto copiado para a área de transferência!');
     });
 });
+//git push
+//git add .
+//git commit -m ""
