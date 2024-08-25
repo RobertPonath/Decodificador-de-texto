@@ -25,15 +25,17 @@ document.getElementById('criptografar').addEventListener('click', function(){
 //document representa todo o conteudo principal da pasta de HTML e o getElementById busca por um elemento dentro do HTML com um ID especifico o .value traz para dentro do JS o valor informado no textaarea do HTML
     let inserirTexto = document.getElementById('texto_inserido').value;
     let criptografarTexto = criptografar(inserirTexto);
-//.textContent é uma propriedade que define o conteudo de texto do elemento HTML 
+    document.querySelector('.resposta_texto').classList.add('ocultar');
+    document.getElementById('resultado_texto').style.display = 'block';
     document.getElementById('resultado_texto').textContent = criptografarTexto;
-//.style permite acessar e modificar o código css, neste caso mudando o display para block fazendo o ficar visivel
     document.getElementById('copiar_texto').style.display = 'block';
 });
 // segue a mesma lógica da explicação acima
 document.getElementById('descriptografar').addEventListener('click', function(){
     let inserirTexto = document.getElementById('texto_inserido').value;
     let descriptografarTexto = descriptografar(inserirTexto);
+    document.querySelector('.resposta_texto').classList.add('ocultar');
+    document.getElementById('resultado_texto').style.display = 'block';
     document.getElementById('resultado_texto').textContent= descriptografarTexto;
     document.getElementById('copiar_texto').style.display = 'block';
 });

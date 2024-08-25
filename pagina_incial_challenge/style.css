@@ -76,12 +76,18 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    text-align: center;
 }
 
 .resultado img {
     margin: 0; 
     width: 60vh;
     display: block;
+}
+
+.resposta_texto.ocultar .resultado,
+.resposta_texto.ocultar .sem_texto {
+    display: none;
 }
 
 .resposta_texto {
@@ -92,6 +98,17 @@ button:hover {
     align-items: center;
     text-align: center;
 
+}
+
+#resultado_texto {
+    border-radius: 1%;
+    width: 140%;
+    height: 80vh;
+    background-color: var(--cor-principal);
+    font-size: 7vh;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-quarta);
+    display: none;
 }
 
 h2 {
@@ -139,5 +156,11 @@ footer a {
     .resultado img {
         width: 80%; 
         margin-left: 0; 
+    }
+}
+
+@media (max-width: 768px) {
+    #resultado_texto {
+        height: 40vh;
     }
 }
