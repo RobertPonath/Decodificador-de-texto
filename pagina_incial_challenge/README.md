@@ -1,9 +1,6 @@
 # Decodificador de Texto
 
-![GitHub repo size](https://img.shields.io/github/repo-size/VieiraGiullia/decodificadorDeTexto?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/VieiraGiullia/decodificadorDeTexto?style=for-the-badge)
-
-<img src="/img/telaPrincipal.png" alt="Foto da tela principal" style="width:75%; display: flex; justify-content: center;">
+<img src="/pagina_incial_challenge/img/main_page.png" alt="Foto da tela principal" style="width:75%; display: flex; justify-content: center;">
 
 > Este projeto é um decodificador de texto simples que permite codificar e decodificar mensagens utilizando regras específicas. A interface é fácil de usar e não requer configuração adicional.
 
@@ -11,46 +8,23 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
 
-- [x] Codificação de mensagens
-- [x] Decodificação de mensagens
-- [ ] Melhoria na interface do usuário
+- [ ] Codificação de mensagens
+- [ ] Decodificação de mensagens
+- [x] Melhoria na interface do usuário
 - [ ] Adicionar suporte a mais idiomas
 - [ ] Implementar testes automatizados
-
-## 💻 Pré-requisitos
-
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-
-- Você instalou a versão mais recente de [JavaScript](https://www.javascript.com/).
-- Você tem uma máquina compatível (Windows, Linux ou Mac).
-- Você leu a [documentação do projeto](https://github.com/VieiraGiullia/decodificadorDeTexto).
-
-## 🚀 Instalando Decodificador de Texto
-
-Para instalar o Decodificador de Texto, siga estas etapas:
-
-### Todos os Sistemas Operacionais:
-
-1. Verifique se você tem o Git instalado. Você pode baixar o Git em [git-scm.com](https://git-scm.com/).
-2. Abra o terminal (ou prompt de comando no Windows) e execute o seguinte comando para clonar o repositório:
-   ```bash
-   git clone https://github.com/VieiraGiullia/decodificadorDeTexto.git
-   
-Você também pode acessar o Decodificador de Texto diretamente online através do [link do Vercel](https://decodificador-de-texto-opal.vercel.app).
-
 
 ## ☕ Usando Decodificador de Texto
 
 Para usar o Decodificador de Texto, siga estas etapas:
 
-1. Abra o arquivo `index.html` em seu navegador.
-2. Digite a mensagem que deseja codificar ou decodificar.
+1. Abra o arquivo `index.html` em seu navegador, voce verá a seguinte tela:
+<img src="/pagina_incial_challenge/img/main_page.png" alt="Foto da tela principal" style="width:75%; display: flex; justify-content: center;">
 
-[<img src="/img/telaPrincipal.png" width="50%">](https://github.com/user-attachments/assets/e18200b8-dc17-4811-b72d-51bf226a518c)
+2. Digite a mensagem que deseja codificar ou decodificar no campo inforamdo.
 
 3. Clique no botão correspondente para realizar a operação.
-
-[<img src="/img/telaPrincipal.png" width="50%">](https://github.com/user-attachments/assets/edc45fc3-7079-46ca-917d-b6d727abe813)
+<img src="/pagina_incial_challenge/img/Botoes_principais.png" alt="foto dos botoes" style="width:25%; display: flex; justify-content: center;">
 
 ## 📫 Contribuindo para Decodificador de Texto
 
